@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo InventoryKu"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nama Aplikasi -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InventoryKu"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi untuk menyimpan dan mengetahui lokasi barang Anda secara mudah dan cepat."
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- Box Ungu Soft: Nama Anggota -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_purple_box"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dibuat oleh:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvAnggotaList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fika Riyadi Solihin  (221351049)\n Khafidh Ilham C.G   (221351065)\n Delia Pebrianti  (221351032)"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvKampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STT Wastukancana"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
